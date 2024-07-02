@@ -4,16 +4,59 @@
     width: 400px; /* Adjust the width as needed */
     height: 600px; /* Adjust the height as needed */
     border: 1px solid black;
+    border-radius: 20px;
     margin: auto;
   }
   
   .part-vertical {
     flex: 1;
     border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100px; /* Add a border to separate the parts */
+    /* text-align: center; */
     text-align: center;
   }
   
   .part-vertical:last-child {
     border-bottom: none; /* Remove the border from the last part */
+  }
+
+
+
+  body{
+    font-size: 28px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .menu-header{
+    background-color: yellow;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  a:link {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: black;
+  }
+
+  
+  a:hover , a:visited:hover{
+    /* color: rgb(204, 126, 184); */
+   background-color: rgb(113, 108, 108)
+   
+  }
+  
+  /* Focus state */
+  a:focus , a:visited:focus{
+    outline: 2px solid rgb(45, 44, 44);
+  background-color: yellow;
+  color: rgb(100, 100, 139);
+    
   }
