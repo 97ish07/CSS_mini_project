@@ -1,0 +1,19 @@
+.container-vertical {
+    display: flex;
+    flex-direction: column;
+    width: 400px; /* Adjust the width as needed */
+    height: 600px; /* Adjust the height as needed */
+    border: 1px solid black;
+    margin: auto;
+  }
+  
+  .part-vertical {
+    flex: 1;
+    border-bottom: 1px solid black;
+    height: 100px; /* Add a border to separate the parts */
+    text-align: center;
+  }
+  
+  .part-vertical:last-child {
+    border-bottom: none; /* Remove the border from the last part */
+  }
